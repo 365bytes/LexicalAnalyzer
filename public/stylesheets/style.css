@@ -1,0 +1,119 @@
+/**
+  OptSystem Lexical Analyzer
+  @author Devpy & 365Bytes Team
+  @version 0.0.1 [Beta]
+**/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00B7FF;
+}
+.login-fixed{
+	margin-top: 15%;
+}
+.lxFormSignIn{
+	
+	padding: 15px;
+	border-radius: 4px;
+	background-color: #fff;
+	border-bottom: 10px solid #ccc;
+}
+.login-uheader{
+	position: absolute;
+    top: -16%;
+    margin-left: 25%;
+    
+}
+.login-uheader img{
+	border: 2px solid #fff;
+}
+.login__input{
+	background: #eee;
+
+	border: 2px solid #ccc;
+	color: #676767;
+	padding: 10px;
+	font-weight: 500;
+	font-size: 16px;
+}
+.logincont{
+	margin-top: 20%;
+}
+.login-title-centered{
+	text-align: center;
+	font-size: 25px;
+	color:#676767;
+	font-weight: 350;
+}
+.fixedUpIzq{
+	margin-top: 4%;
+}
+
+ul.pagination1 li:hover,
+ul.pagination2 li:hover,
+ul.pagination3 li:hover {
+	background-color: #FF9500;
+}
+
+ul.pagination1 li,
+ul.pagination2 li,
+ul.pagination3 li {
+    padding: 10px;
+
+	background-color: #8890FC;
+    font-size: 24px;
+    color: #aaa;
+    line-height: 1;
+    width: 600px;
+    margin-bottom: 1px;
+	list-style:none;
+}
+
+ul.red {
+	outline:10px solid red;
+}
+ul.simplePagerNav{
+
+	padding: 6px;
+	padding-left: 40%;
+	font-size: 15px;
+	background: #eee;
+	border: 2px solid #ccc;
+	overflow: hidden
+}
+ul.simplePagerNav li{
+    display:block;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+	font-size:14px;
+}
+
+ul.simplePagerNav li a{
+    color: #333;
+    text-decoration: none;
+}
+
+li.currentPage {
+	background: red;
+    background: #337ab7;
+    border-color: #337ab7;	
+}
+
+ul.simplePagerNav li.currentPage a {
+	color: #fff;	
+}
+
+table.pageme {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}  
+
+table.pageme td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,89 @@
+//-
+	OptSystem Lexical Analyzer
+	@author Devpy & 365Bytes Team
+	@version 0.0.1 [Beta]
+
+extends layout
+
+block content
+
+	div.col-md-4.hide(id="panelContents")
+		div.panel.panel-default
+			div.panel-heading 
+				i.fa.fa-code
+				|  Code:
+				a.btn.btn-success.pull-right(href="") New Scan
+			div.panel-body
+				pre.code Test
+
+	div.col-md-4.hide(id="panelLexemas")
+		div.panel.panel-default
+			div.panel-heading 
+				i.fa.fa-list
+				|  Lexical Analysis:
+			div.panel-body
+				ul.list-group
+
+	div.col-md-4.hide(id="panelLexicalResults")
+		div.panel.panel-default
+			div.panel-heading 
+				i.fa.fa-bar-chart
+				|  Resultados [Lexemas]:
+			div.panel-body
+				ul.list-group
+
+	div.container(id="startLexContainer")
+		div.col-md-4.col-md-offset-4.col-xs-10.col-xs-offset-1.login-fixed
+
+			form.lxFormSignIn(method="post", action="javascript:;", id="loginForm")
+
+				div.login-uheader
+					img.img-circle(src="/images/up.png")
+
+				
+				div.logincont
+
+					h2.login-title-centered Select your file 
+					div(class=(undefined != response && response.status == 0 && (response.from == 'username' || response.from == 'all') ? 'form-group has-error' : 'form-group'))
+						span.label.label-info	Max FileSize: 2Mb
+						input.form-control(id="file", data-rel="lexFile", required="required", type="file", name="file", placeholder="Username or Email...")
+						span.label.label-danger.hide(id="errorStart") n/a
+
+					hr.divider
+					div.btn-group
+						button.btn.btn-primary(data-rel="lexSubmit")
+							i.fa.fa-play
+							|  Start Scan
+					hr.divider
+					div.alert.alert-info
+
+						p 
+							i.fa.fa-shield 
+							|  Client connection has been encrypted.
+			
+			div.panel.panel-default.fixedUpIzq
+				div.panel-heading This analyzer accepts:
+					| [ JS, Python]
+				div.panel-body
+					strong Release:
+					|  v0.1
+	
+
+	footer.footer
+		div.container
+			p.pull-right
+				i(style="color:#fff") Developed by 
+					a(href="mailto:devpy@365bytes.com") Devpy
+
+
+	script.
+		$.backstretch([
+			"http://dynamicnetsolutions.co.uk/en/en/img/~/2013/11/homepage-welcome.jpg"
+		], {duration: 3000, fade: 750});
+		
+	script(src="/javascripts/script.js")
+	script.
+		jQuery('button[data-rel=lexSubmit]').click( function(){
+			coreApps.initUpload();
+		});
+
